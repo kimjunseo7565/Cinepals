@@ -1,0 +1,873 @@
+/* light-theme.css - 라이트모드 스타일 */
+
+:root {
+    --primary-bg: #fff;
+    --primary-text: #333;
+    --secondary-bg: #f8f9fa;
+    --border-color: #e9ecef;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+#header {
+    background-color: #fff;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    height: 60px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+}
+
+.search_form input {
+    background-color: #f1f3f5;
+    border: 1px solid #ced4da;
+    color: #495057;
+}
+
+.search_form button i {
+    color: #6c757d;
+}
+
+.auth_btns a {
+    color: #495057;
+}
+
+.auth_btns a:hover {
+    color: #212529;
+}
+
+.main_menu_bar .menu_item .nav_item {
+    color: #495057;
+}
+
+.main_menu_bar .menu_item .nav_item:hover {
+    color: #212529;
+}
+
+.content_header h2 {
+    color: #343a40;
+}
+
+.more_btn {
+    color: #6c757d;
+}
+
+/* 메인 페이지 영화 카테고리 탭 스타일 */
+.movie_category_tabs .category_tab {
+    color: #495057;
+}
+
+.movie_category_tabs .category_tab.active {
+    color: #212529;
+    border-bottom-color: #e50914;
+    font-weight: bold;
+}
+
+.movie_category_tabs .category_tab:hover {
+    color: #212529;
+}
+
+/* movies.php 페이지 카테고리 탭 스타일 */
+.category_tabs .category_tab {
+    color: #495057;
+}
+
+.category_tabs .category_tab.active {
+    color: #212529;
+    border-bottom-color: #e50914;
+    font-weight: bold;
+}
+
+.category_tabs .category_tab:hover {
+    color: #212529;
+}
+
+/* 영화 상세 페이지 - 가독성 개선 */
+.movie_detail {
+    color: #000;
+}
+
+.movie_detail .movie_title {
+    color: #000;
+    font-weight: bold;
+}
+
+.movie_detail .rating {
+    color: #000;
+}
+
+.movie_detail .rating i {
+    color: #ffd700;
+}
+
+.movie_detail .info_item {
+    color: #000;
+}
+
+.movie_detail .info_item b {
+    color: #333;
+    font-weight: bold;
+}
+
+.movie_detail .movie_synopsis {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+/* 좋아요, 저장 버튼 스타일 - 색상만 변경 */
+.action_buttons .action_btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.action_buttons .action_btn:hover {
+    background-color: #e9e9e9;
+}
+
+.action_buttons .action_btn.active {
+    background-color: #e50914;
+    color: white;
+    border-color: #e50914;
+}
+
+/* 극장 버튼 스타일 추가 */
+.theater_buttons {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.theater_btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.theater_btn:hover {
+    background-color: #e9e9e9;
+    border-color: #ddd;
+}
+
+/* 영화 정보 메타 스타일 추가 */
+.movie_meta {
+    color: #333;
+}
+
+.meta_label {
+    color: #6c757d;
+}
+
+/* 별점 스타일 추가 */
+.rating_score {
+    color: #e50914;
+}
+
+/* 예고편 섹션 스타일 추가 */
+.trailer_section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section_title {
+    color: #333;
+}
+
+.no_trailer {
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+/* 평점 섹션 - 색상만 변경 */
+.review_form {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+.review_title {
+    color: #000;
+    font-weight: bold;
+}
+
+textarea {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.star_rating i {
+    color: #ccc;
+}
+
+.star_rating i.active {
+    color: #ffd700;
+}
+
+/* 리뷰 버튼 스타일 - 색상만 변경 */
+.review_buttons .review_btn {
+    color: #333;
+}
+
+.review_buttons .review_cancel {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.review_buttons .review_submit {
+    background-color: #e50914;
+    color: white;
+    border: none;
+}
+
+/* 리뷰 카드 스타일 - 색상만 변경 */
+.review_card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+.review_card .review_content {
+    color: #333;
+}
+
+.review_card .review_footer {
+    color: #666;
+}
+
+.review_card .review_actions button {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* 카드, 컨테이너 스타일 */
+.movie_card,
+.collection_card,
+.comment_item,
+.post_container {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    color: #333;
+}
+
+/* 알림창 스타일 */
+.alert,
+.notification {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #e9ecef;
+}
+
+/* 버튼 스타일 */
+button,
+.btn {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ced4da;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #e9ecef;
+}
+
+/* 테이블 스타일 */
+table,
+th,
+td {
+    border-color: #dee2e6;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+td {
+    color: #333;
+}
+
+/* 메인 슬라이더 스타일 */
+.main-slider {
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+}
+
+/* 리뷰가 없을 때 메시지 박스 스타일 - 라이트모드 */
+.no_reviews {
+    background-color: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+    color: #666 !important;
+    text-align: center !important;
+    padding: 30px !important;
+    margin-top: 20px !important;
+}
+
+/* 커뮤니티 페이지 라이트 모드 스타일 - 전체 코드 */
+/* 큰 직사각형(main_wrapper) 배경색 변경 및 테두리 추가 - 커뮤니티 페이지만 */
+body:has(.post_list) .main_wrapper,
+body:has(.sort-links) .main_wrapper,
+.post_list~.main_wrapper,
+.content_header:has(+.ad_slider) .main_wrapper {
+    background-color: #f8f9fa !important;
+    border: 1px solid #aaa !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 마이페이지 그룹 내부 */
+.side_menu .menu_list .menu_item,
+.content_area .profile_container,
+.content_area .info_form,
+.stats_container .stat_item .stat_label,
+.content_area .info_form .form_label,
+.comments_list .comment_item,
+.content_area .movie_section,
+.content_area .movie_section .movie_grid p,
+.content_area .movie_section .movie_grid .movie_card .movie_info .movie_director {
+    background-color: #f0f0f0 !important;
+    color: #777;
+}
+
+/* 그룹 내의 그룹 */
+.content_area .movie_section .movie_grid .movie_card,
+.modal .modal-content .info-text {
+    background-color: #f2f2f2 !important;
+    color: #777;
+}
+
+/* 마이페이지 그룹 테두리 */
+.side_menu .menu_list,
+.content_area .profile_container,
+.content_area .info_form {
+    border: 1px solid #aaa !important;
+}
+
+/* 좌측 메뉴 마우스 올렸을 때, 리뷰 제목 */
+.side_menu .menu_list .menu_item:hover,
+.comments_list .comment_item .movie_title,
+.content_area .movie_section h2 {
+    color: #000;
+    font-weight: bold;
+}
+
+/* 마이페이지 통계 수치(내 리뷰, 팔로워, 팔로잉) */
+.stats_container .stat_item .stat_value,
+.comments_list .comment_item .rating-display,
+.comments_list .comment_item .content-text,
+.content_area .movie_section .movie_grid .movie_card .movie_info .movie_title {
+    color: #000;
+}
+
+/* 마이페이지 정보 폼 */
+.content_area .info_form .form_input,
+.content_area .info_form .date_input {
+    color: #000;
+    border: 1px solid #aaa;
+}
+
+/* 마이페이지 정보 저장 버튼 */
+.content_area .info_form .save_btn {
+    background-color: #2c5282;
+}
+
+/* 글쓰기 */
+.main_wrapper .content_wrap label {
+    color: #333;
+}
+
+.main_wrapper .content_wrap #b_title,
+.main_wrapper .content_wrap textarea {
+    background-color: #fff;
+    color: #333;
+}
+
+/* 영화 상세 페이지 */
+.trailer_section .section_title {
+    color: #000;
+}
+
+/* 로그인&회원가입 페이지 */
+.main_wrapper .login_wrap .content_item,
+.main_wrapper .login_wrap .content_item .item_text .item_title,
+.main_wrapper .login_wrap .content_item .forgot_link,
+.main_wrapper .login_wrap .content_item .keep_login,
+.main_wrapper .login_wrap .content_item .signup_guide,
+.main_wrapper .login_wrap .content_item .signup_text,
+.main_wrapper .login_wrap .content_item .divider,
+.main_wrapper .login_wrap .content_item .terms_wrapper .terms_item span,
+.main_wrapper .login_wrap .content_item .login_guide,
+.success_container .success_box,
+.success_container .success_box .success_text,
+.success_container .success_box .success_content i,
+.success_container .success_box .success_message,
+.success_container .success_box .success_desc {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* 로그인&회원가입 가이드 */
+.main_wrapper .login_wrap .content_item .signup_guide a,
+.main_wrapper .login_wrap .content_item .login_guide a {
+    color: #000;
+    font-weight: bold;
+}
+
+/* 로그인 입력칸&버튼 */
+.main_wrapper .login_wrap .content_item .input_wrapper input,
+.main_wrapper .login_wrap .content_item .login_button {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 로그인 입력칸 설명 */
+.main_wrapper .login_wrap .content_item .input_wrapper input::placeholder {
+    color: #777;
+}
+
+/* 영화 상세보기 리뷰 수정 */
+.my_reviews .review_card .edit-form .edit-textarea {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 마이페이지 리뷰 수정 */
+.main_wrapper .mypage_container .content_area .comments_list .comment_item .edit-form .rating-select,
+.main_wrapper .mypage_container .content_area .comments_list .comment_item .edit-form .content-textarea {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 회원탈퇴 */
+.modal .modal-content,
+.modal .modal-content h3 {
+    background-color: #ddd !important;
+    color: #777;
+}
+
+/* 회원탈퇴 글자 */
+.modal .modal-content p {
+    color: #777;
+}
+
+/* 컨텐츠 영역 */
+.content_wrap {
+    color: #333 !important;
+}
+
+/* 헤더 영역 */
+.content_header h2 {
+    color: #333 !important;
+}
+
+.content_header {
+    border-bottom-color: #ccc !important;
+}
+
+.content_header h2:after {
+    background: #2c5282 !important;
+}
+
+/* 검색 영역 */
+.search_select {
+    border-color: #ccc !important;
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.search_input_wrap {
+    border-color: #ccc !important;
+    background-color: #fff !important;
+}
+
+.search_input {
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.search_btn {
+    background-color: #2c5282 !important;
+    color: #fff !important;
+}
+
+.write_post_btn {
+    background-color: #2c5282 !important;
+    color: #fff !important;
+}
+
+/* 정렬 링크 */
+.sort-links a {
+    color: #777 !important;
+}
+
+.sort-links a:hover {
+    color: #333 !important;
+}
+
+.sort-links a.active {
+    background-color: #2c5282 !important;
+    color: #fff !important;
+}
+
+/* 게시글 카드 - 더 뚜렷한 테두리와 그림자 추가 */
+.post_card {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 25px !important;
+}
+
+.post_card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* 게시글 상단 버튼 */
+.btn_edit,
+.btn_delete {
+    border: 1px solid #ccc !important;
+    background-color: #f0f2f5 !important;
+    color: #777 !important;
+}
+
+.btn_edit:hover,
+.btn_delete:hover {
+    background-color: #e5e7ea !important;
+    color: #333 !important;
+}
+
+/* 게시글 정보 */
+.post_author {
+    color: #333 !important;
+}
+
+.user_icon {
+    color: #2c5282 !important;
+}
+
+.post_date,
+.post_views,
+.post_comment {
+    color: #777 !important;
+}
+
+.post_views i,
+.post_comment i {
+    color: #999 !important;
+}
+
+.post_title {
+    color: #333 !important;
+}
+
+.post_content {
+    color: #555 !important;
+}
+
+/* 게시글 하단 */
+.post_footer {
+    border-top: 1px solid #ccc !important;
+    background-color: #f0f2f5 !important;
+    padding: 12px 15px !important;
+}
+
+.more_btn {
+    color: #777 !important;
+}
+
+.more_btn:hover {
+    color: #333 !important;
+}
+
+/* 댓글 영역 - 더 뚜렷하게 구분 */
+.comment_area {
+    background-color: #f0f2f5 !important;
+    border-top: 1px solid #ccc !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+/* 댓글 아이템 - 더 뚜렷하게 구분 */
+.comment_item {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 15px !important;
+}
+
+.comment_author {
+    color: #333 !important;
+}
+
+.comment_author i {
+    color: #2c5282 !important;
+}
+
+.comment_date {
+    color: #777 !important;
+}
+
+.comment_text {
+    color: #555 !important;
+}
+
+.comment_input {
+    border-color: #ccc !important;
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.comment_submit {
+    background-color: #2c5282 !important;
+    color: #fff !important;
+}
+
+/* 페이지네이션 - 더 뚜렷하게 */
+.page_btn {
+    background-color: #fff !important;
+    color: #777 !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.page_btn:hover {
+    background-color: #f0f2f5 !important;
+    color: #333 !important;
+}
+
+.page_btn.active {
+    background-color: #2c5282 !important;
+    color: #fff !important;
+    border-color: #2c5282 !important;
+}
+
+/* 광고 슬라이더 */
+.ad_slider {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.ad_arrow {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    color: #fff !important;
+}
+
+.ad_indicator {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.ad_indicator.active {
+    background-color: #fff !important;
+}
+
+/* 게시글이 없을 때 메시지 */
+div[style*="text-align: center"][style*="padding: 40px"][style*="background: #1A1A1A"] {
+    background-color: #fff !important;
+    color: #777 !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.event_heading {
+    font-size: 28px;
+    margin: 20px 0 40px 0;
+    color: #333;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+h3.carousel-title {
+    color: #fff !important;
+}
+
+.filter_select {
+    background: white !important;
+    color: #000 !important;
+    font-size: 16px;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    border: 0 !important;
+    border-left: 4px solid #3498db !important;
+}
+
+.content_title,
+.admin_container .content_area .title {
+    color: #111;
+}
+
+/* 이벤트 관리 */
+.events_table {
+    background: white !important;
+    color: #000 !important;
+    font-size: 16px;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    border: 0;
+    border-left: 4px solid #db34a9 !important;
+    border-collapse: separate;   /* 셀 병합 해제 */
+    border-spacing: 0;           /* 셀 간격 없애기 */
+    overflow: hidden;            /* 모서리 둥글기 적용 */
+}
+
+.events_table th,
+.events_table td,
+.reports_table td {
+    border: 0 !important;
+    background-color: #fff !important;
+    color: #111 !important;
+
+}
+
+/* 욕설 필터 섹션 */
+.filter_section {
+    background: white !important;
+    color: #000 !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    border: 0;
+    border-left: 4px solid #f39c12 !important;
+}
+
+.filter_section .filter_title {
+    color: #111;
+    border-bottom: 2px solid #f39c12;
+}
+
+.filter_input {
+    background: #fff;
+    color: #111;
+}
+
+.filter_word,
+.search_filter,
+.filter_input {
+    background: #fff !important;
+    color: #111 !important;
+    border: 1px solid #aaa !important;
+}
+
+.stat_box {
+    background: white !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    border: 0;
+    border-left: 4px solid #f39c12 !important;
+}
+
+.stat_number {
+    color: #111;
+}
+
+.stat_label {
+    color: #555;
+}
+
+.table_wrap {
+    background: white !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    border: 0;
+    border-left: 4px solid #f39c12 !important;
+}
+
+.reports_table th,
+.reports_table td {
+    background: #fff;
+    color: #111;
+    border-radius: 15px !important;
+    border: 0;
+}
+
+.members_table .action_buttons .action_btn {
+    background-color: #f0f0f0;
+    border:1px solid #aaa;
+    color: #111;
+}
+
+.stats_section .members {
+    border-left: 4px solid #3498db !important;
+}
+
+.stats_section .movies {
+    border-left: 4px solid #e74c3c !important;
+}
+
+.stats_section .reviews {
+    border-left: 4px solid #2ecc71 !important;
+}
+
+.add_event_btn,
+.event_form {
+    background: white !important;
+    color: #111 !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+    border: 0;
+    border-left: 4px solid #db34a9 !important;
+}
+
+.event_form .form_group .form_label,
+.event_form .form_group .form_input,
+.event_form .form_group .form_select,
+.event_form .form_group .file_input {
+    background-color: #fff;
+    color: #111 !important;
+}
+
+.event_form .form_group .form_input,
+.event_form .form_group .form_select,
+.event_form .form_group .file_input {
+    border: 1px solid #aaa;
+}
+.event_form .form_buttons .btn_submit {
+    background: #db34a9 !important;
+}
+
+.recommendation_section {
+    background: #f0f0f0 !important;
+}
+
+.recommendation_card {
+    background: #fff !important;
+    border: 1px solid #d0d0d0;
+}
+
+.recommendation_subtitle {
+    color: #555 !important
+}
+
+.recommendation_title {
+    color: #111 !important;
+}
+
+.recommendation_genre {
+    color: #111 !important;
+}
+
+.recommendation_rating {
+    color: #E50914 !important;
+}
+
+.event_info_box {
+    background: #f0f0f0;
+    border: 1px solid #e0e0e0;
+}
+
+.event_info_title {
+    color: #111;
+}
+
+.event_info_value {
+    color: #333;
+}

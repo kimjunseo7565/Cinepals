@@ -1,0 +1,693 @@
+/* dark-theme.css - 다크모드 스타일 */
+
+:root {
+    --primary-bg: #000;
+    --primary-text: #fff;
+    --secondary-bg: #111;
+    --border-color: #333;
+}
+
+/* 다크모드 스타일 */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#header {
+    background-color: #0a0a0a;
+    border-bottom: none;
+    position: relative;
+    height: 60px;
+}
+
+footer {
+    background-color: #0a0a0a;
+    border-top: 1px solid #222;
+}
+
+.search_form input {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.search_form button i {
+    color: #fff !important;
+}
+
+.auth_btns a {
+    color: #aaa;
+}
+
+.auth_btns a:hover {
+    color: #fff;
+}
+
+.main_menu_bar .menu_item .nav_item {
+    color: #aaa;
+}
+
+.main_menu_bar .menu_item .nav_item:hover {
+    color: #fff;
+}
+
+.content_header h2 {
+    color: #fff;
+}
+
+.more_btn {
+    color: #aaa;
+}
+
+/* 리뷰가 없을 때 메시지 박스 스타일 - 다크모드 */
+.no_reviews {
+    background-color: #111 !important;
+    border: 1px solid #333 !important;
+    color: #aaa !important;
+    text-align: center !important;
+    padding: 30px !important;
+    margin-top: 20px !important;
+}
+
+/* 메인 슬라이더 */
+.main-slider {
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+/* 카테고리 탭 스타일 */
+.movie_category_tabs .category_tab {
+    color: #aaa;
+}
+
+.movie_category_tabs .category_tab.active {
+    color: #fff;
+    border-bottom-color: #e50914;
+    font-weight: bold;
+}
+
+.movie_category_tabs .category_tab:hover {
+    color: #fff;
+}
+
+.category_tabs .category_tab {
+    color: #aaa;
+}
+
+.category_tabs .category_tab.active {
+    color: #fff;
+    border-bottom-color: #e50914;
+    font-weight: bold;
+}
+
+.category_tabs .category_tab:hover {
+    color: #fff;
+}
+
+/* 영화 상세 페이지 */
+.movie_detail {
+    color: #fff;
+}
+
+.movie_detail .movie_title {
+    color: #fff;
+}
+
+.movie_detail .rating {
+    color: #fff;
+}
+
+.movie_detail .info_item {
+    color: #fff;
+}
+
+.movie_detail .info_item b {
+    color: #aaa;
+}
+
+.movie_detail .movie_synopsis {
+    background-color: #111;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+/* 평점 섹션 */
+.review_form {
+    background-color: #111;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.review_title {
+    color: #fff;
+}
+
+textarea {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.star_rating i {
+    color: #666;
+}
+
+.star_rating i.active {
+    color: #ffd700;
+}
+
+/* 카드, 컨테이너 스타일 */
+.movie_card,
+.collection_card,
+.comment_item,
+.post_container {
+    background-color: #1a1a1a;
+    border: 1px solid #111;
+    color: #fff;
+    box-shadow: none !important;
+}
+
+/* 알림창 스타일 */
+.alert,
+.notification {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+/* 버튼 스타일 */
+button,
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #444;
+}
+
+/* 테이블 스타일 */
+table,
+th,
+td {
+    border-color: #333;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+td {
+    color: #fff;
+}
+
+.side_menu .menu_list .menu_item {
+    color: #aaa;
+}
+
+.side_menu .menu_list .menu_item:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* genre_filter.php 다크모드시에 적용 */
+.genre_filter {
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2) !important;
+    /* 더 은은한 흰색 그림자 */
+    border: 1px solid #515151 !important;
+    /* 다크모드에3 맞는 테두리 추가 */
+    border-radius: 5px;
+}
+
+/* 캐러셀 제목 스타일 - 다크모드 */
+h2.carousel-title,
+h3.carousel-title {
+    color: #fff !important;
+}
+
+/* 더보기 버튼 - 다크모드 */
+.more_btn {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.more_btn:hover {
+    color: #e50914 !important;
+    /* 호버시 빨간색으로 변경 */
+}
+
+/* 캐러셀 정보 영역의 제목 */
+.carousel-info .carousel-title {
+    color: #fff !important;
+}
+
+/* 관리자 페이지 제목 - 다크모드 전용 */
+.admin_container .title {
+    color: #fff !important;
+}
+
+/* mypage_movies.php 다크모드 */
+.movie_section,
+.ai_section {
+    background: #1a1a1a !important;
+    border-color: #333 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.movie_section h2,
+.ai_title h2,
+.ai_header h2 {
+    color: #fff !important;
+}
+
+.ai_header p {
+    color: #aaa !important;
+}
+
+.movie_card {
+    background: #2a2a2a !important;
+    border-color: #333 !important;
+}
+
+.movie_title,
+.movie_title a {
+    color: #fff !important;
+}
+
+.movie_director {
+    color: #aaa !important;
+}
+
+.empty_message {
+    color: #aaa !important;
+}
+
+.toggle_more_btn {
+    background: #2a2a2a !important;
+    border-color: #333 !important;
+    color: #fff !important;
+}
+
+/* AI 섹션 탭 */
+.ai_tabs {
+    background: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+.ai_tab {
+    color: #aaa !important;
+    background: transparent !important;
+}
+
+.ai_tab:hover {
+    background: #2a2a2a !important;
+}
+
+.ai_tab.active {
+    color: #667eea !important;
+    background: #2a2a2a !important;
+}
+
+/* AI 탭 콘텐츠 영역 */
+.ai_tab_content {
+    background: #1a1a1a !important;
+}
+
+.ai_recommend_content {
+    background: #1a1a1a !important;
+}
+
+/* AI 빈 상태 */
+.ai_empty_state {
+    background: #1a1a1a !important;
+}
+
+.ai_empty_state p {
+    color: #aaa !important;
+}
+
+.ai_empty_state i {
+    color: #667eea !important;
+}
+
+/* AI 컨텐츠 영역 */
+.ai_content {
+    background: #1a1a1a !important;
+}
+
+.ai_analysis_box,
+.ai_info_box {
+    background: #2a2a2a !important;
+    border-color: #333 !important;
+    color: #fff !important;
+}
+
+/* AI 채팅 */
+.chat_container {
+    background: #1a1a1a !important;
+}
+
+.chat_messages {
+    background: #111 !important;
+}
+
+.chat_bubble {
+    background: #2a2a2a !important;
+    color: #fff !important;
+}
+
+.chat_input_area {
+    background: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+.chat_input_area input {
+    background: #2a2a2a !important;
+    border-color: #333 !important;
+    color: #fff !important;
+}
+
+/* AI 채팅 메시지 영역 */
+.ai_chat_messages {
+    background: #1a1a1a !important;
+}
+
+/* AI 채팅 웰컴 메시지 */
+.chat_welcome {
+    background: #1a1a1a !important;
+    color: #aaa !important;
+}
+
+.chat_welcome h3 {
+    color: #fff !important;
+}
+
+.chat_welcome p {
+    color: #aaa !important;
+}
+
+/* AI 채팅 제안 버튼 */
+.chat_suggestions {
+    background: transparent !important;
+}
+
+.chat_suggestion {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #667eea !important;
+}
+
+.chat_suggestion:hover {
+    background: #667eea !important;
+    color: #fff !important;
+}
+
+/* AI 채팅 입력 영역 */
+.ai_chat_input_area {
+    background: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+.ai_chat_input {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
+.ai_chat_input::placeholder {
+    color: #888 !important;
+}
+
+.ai_chat_input:focus {
+    border-color: #667eea !important;
+}
+
+/* AI 채팅 버블 */
+.chat_message.ai .chat_bubble {
+    background: #2a2a2a !important;
+    color: #fff !important;
+}
+
+.chat_message.user .chat_avatar {
+    background: #3a3a3a !important;
+    color: #aaa !important;
+}
+
+/* 타이핑 인디케이터 */
+.typing_indicator {
+    background: #2a2a2a !important;
+}
+
+.suggestion_chips .chip {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
+.suggestion_chips .chip:hover {
+    background: #3a3a3a !important;
+}
+
+/* 추천 카드 */
+.recommendation_card {
+    background: #2a2a2a !important;
+    border-color: #333 !important;
+}
+
+.recommendation_title {
+    color: #fff !important;
+}
+
+.recommendation_reason {
+    color: #aaa !important;
+}
+
+/* ===== my_comments.php 다크모드 ===== */
+
+/* 페이지 헤더 */
+.page_header {
+    border-color: #333 !important;
+}
+
+.header_left h2 {
+    color: #fff !important;
+}
+
+.stat_item {
+    color: #aaa !important;
+}
+
+.stat_item strong {
+    color: #fff !important;
+}
+
+/* 검색 및 정렬 */
+.search_input {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
+.search_input:focus {
+    background: #333 !important;
+    border-color: #667eea !important;
+}
+
+.search_input::placeholder {
+    color: #888 !important;
+}
+
+.search_icon {
+    color: #888 !important;
+}
+
+.sort_dropdown {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
+.sort_dropdown:hover {
+    background: #333 !important;
+}
+
+.sort_dropdown option {
+    background: #2a2a2a !important;
+    color: #fff !important;
+}
+
+/* 리뷰 컨테이너 */
+.reviews_container {
+    background: #1a1a1a !important;
+}
+
+/* 리뷰 아이템 */
+.review_item {
+    background: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+.review_item:hover {
+    background: #2a2a2a !important;
+}
+
+.review_thumbnail {
+    background: #333 !important;
+}
+
+.review_title {
+    color: #fff !important;
+}
+
+.review_meta {
+    color: #aaa !important;
+}
+
+.review_meta span {
+    color: #aaa !important;
+}
+
+.review_content {
+    color: #ccc !important;
+    background: #2a2a2a !important;
+    border-left-color: #667eea !important;
+}
+
+.rating_badge {
+    background: #e50914 !important;
+    color: #fff !important;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown_menu {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dropdown_item {
+    color: #fff !important;
+    background: transparent !important;
+}
+
+.dropdown_item:hover {
+    background: #3a3a3a !important;
+}
+
+.dropdown_item.delete_item:hover {
+    background: #5a2a2a !important;
+    color: #ff6b6b !important;
+}
+
+.menu_btn {
+    color: #aaa !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.menu_btn:hover {
+    color: #fff !important;
+}
+
+/* 빈 상태 */
+.empty_state {
+    background: #1a1a1a !important;
+}
+
+.empty_title {
+    color: #fff !important;
+}
+
+.empty_text {
+    color: #aaa !important;
+}
+
+.empty_icon i {
+    color: #667eea !important;
+}
+
+.explore_btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: #fff !important;
+}
+
+/* 모달 */
+.modal_overlay {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.modal_box {
+    background: #1a1a1a !important;
+    border: 1px solid #333 !important;
+}
+
+.modal_header {
+    border-color: #333 !important;
+}
+
+.modal_header h3 {
+    color: #fff !important;
+}
+
+.close_btn {
+    color: #aaa !important;
+    background: transparent !important;
+}
+
+.close_btn:hover {
+    color: #fff !important;
+}
+
+.form_label {
+    color: #fff !important;
+}
+
+.content_textarea {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
+.content_textarea:focus {
+    border-color: #667eea !important;
+}
+
+.rating_chip {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #aaa !important;
+}
+
+.rating_chip:hover {
+    background: #3a3a3a !important;
+    color: #fff !important;
+}
+
+.rating_chip.selected {
+    background: #667eea !important;
+    border-color: #667eea !important;
+    color: #fff !important;
+}
+
+.modal_footer {
+    border-color: #333 !important;
+}
+
+.cancel_btn {
+    background: #333 !important;
+    color: #fff !important;
+    border-color: #444 !important;
+}
+
+.cancel_btn:hover {
+    background: #444 !important;
+}
+
+.save_btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: #fff !important;
+    border: none !important;
+}

@@ -1,0 +1,122 @@
+/* manager.scss */
+.admin_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.side_menu {
+  width: 240px;
+  flex-shrink: 0;
+}
+.side_menu .menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border: 1px solid #2c2f35;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.side_menu .menu_item {
+  padding: 0.75rem 1rem;
+  background: #1a1d24;
+  color: #aaa;
+}
+.side_menu .menu_item:hover {
+  background: #2a2d34;
+  color: #fff;
+}
+
+.content_area {
+  flex-grow: 1;
+}
+.content_area .stats_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat_card {
+  background: #1a1d24;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.stat_card .stat_title {
+  color: #aaa;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+.stat_card .stat_value {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.stat_card .stat_change {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+.recent_members {
+  background: #1a1d24;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.recent_members .members_title {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.recent_members .member_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.member_item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #2a2d34;
+  border-radius: 6px;
+}
+.member_item .member_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a1d24;
+  margin-right: 1rem;
+}
+.member_item .member_info {
+  flex-grow: 1;
+}
+.member_item .member_info .member_name {
+  color: #fff;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+.member_item .member_info .member_date {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+.member_item .member_email {
+  color: #aaa;
+  margin-right: 1rem;
+}
+
+.member_status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+.member_status.status_active {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+.member_status.status_pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+}/*# sourceMappingURL=manager_home.css.map */

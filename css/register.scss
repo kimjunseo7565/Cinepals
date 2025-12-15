@@ -1,0 +1,96 @@
+.register_form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .social_login_btn {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+
+        &.Cinepals {
+            background: #E50914;
+            color: #fff;
+            border: none;
+        }
+
+        &.google {
+            background: #fff;
+            color: #333;
+            border: 2px solid #dadce0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        &.naver {
+            background: #03C75A;
+            color: #fff;
+            border: none;
+        }
+
+        &.kakao {
+            background: #FEE500;
+            color: #3C1E1E;
+            border: none;
+        }
+
+        &.twitter {
+            background: #1DA1F2;
+            color: #fff;
+            border: none;
+        }
+
+        &.apple {
+            background: #000;
+            color: #fff;
+            border: none;
+        }
+
+        &.email {
+            background: #495057;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    .divider {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin: 24px 0;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background: #333;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+
+    .signup_text {
+        margin-top: 24px;
+        color: #666;
+        font-size: 13px;
+        line-height: 1.6;
+
+        br {
+            margin-bottom: 4px;
+        }
+    }
+}

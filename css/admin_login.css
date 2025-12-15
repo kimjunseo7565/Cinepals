@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 관리자 페이지 스타일 */
+.admin_page {
+  background-color: #f5f5f5;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.admin_page .admin_login_container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+}
+.admin_page .admin_login_container .login_box {
+  text-align: center;
+}
+.admin_page .admin_login_container .login_box h2 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.admin_page .admin_login_container .login_box form {
+  display: flex;
+  flex-direction: column;
+}
+.admin_page .admin_login_container .login_box form input {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333333;
+  font-size: 1rem;
+}
+.admin_page .admin_login_container .login_box form input::-moz-placeholder {
+  color: #666666;
+}
+.admin_page .admin_login_container .login_box form input::placeholder {
+  color: #666666;
+}
+.admin_page .admin_login_container .login_box form input:focus {
+  outline: none;
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.1);
+}
+.admin_page .admin_login_container .login_box form button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.admin_page .admin_login_container .login_box form button:hover {
+  background-color: #c40812;
+}/*# sourceMappingURL=admin_login.css.map */

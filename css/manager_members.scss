@@ -1,0 +1,149 @@
+.admin_container {
+    .search_filter_area {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        .search_box {
+            flex-grow: 1;
+            position: relative;
+
+            input {
+                width: 100%;
+                padding: 0.75rem 1rem;
+                padding-right: 2.5rem;
+                background: #1a1d24;
+                border: 1px solid #2c2f35;
+                border-radius: 8px;
+                color: #fff;
+
+                &::placeholder {
+                    color: #aaa;
+                }
+            }
+
+            i {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #666;
+            }
+        }
+
+        .filter_select {
+            padding: 0.75rem 1rem;
+            background: #1a1d24;
+            border: 1px solid #2c2f35;
+            border-radius: 8px;
+            color: #fff;
+            min-width: 120px;
+        }
+    }
+
+    .members_table_wrap {
+        background: #1a1d24;
+        border-radius: 0;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+
+        .members_table {
+            width: 100%;
+
+            th, td {
+                padding: 1rem;
+                text-align: left;
+                border-bottom: 1px solid #2c2f35;
+            }
+
+            th {
+                background: #2a2d34;
+                color: #fff;
+                font-weight: normal;
+            }
+
+            td {
+                color: #aaa;
+            }
+        }
+    }
+
+    .member_info {
+        .member_name {
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+
+        .member_email {
+            color: #666;
+            font-size: 0.875rem;
+        }
+    }
+
+    .member_status {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+
+        &.status_active {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10B981;
+        }
+
+        &.status_inactive {
+            background: rgba(245, 158, 11, 0.1);
+            color: #F59E0B;
+        }
+
+        &.status_banned {
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+        }
+    }
+
+    .action_buttons {
+        display: flex;
+        gap: 0.5rem;
+
+        .action_btn {
+            padding: 0.25rem 0.75rem;
+            border: 1px solid #2c2f35;
+            border-radius: 4px;
+            background: transparent;
+            color: #aaa;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                background: #2a2d34;
+                color: #fff;
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .page_btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid #2c2f35;
+            border-radius: 4px;
+            background: transparent;
+            color: #aaa;
+            cursor: pointer;
+
+            &.active {
+                background: #2a2d34;
+                color: #fff;
+            }
+
+            &:hover:not(.active) {
+                background: #2a2d34;
+                color: #fff;
+            }
+        }
+    }
+}
